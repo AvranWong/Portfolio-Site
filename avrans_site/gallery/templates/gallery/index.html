@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Avran's Site</title>
+  </head>
+  <body>
+    {% block content %}
+    {% load static %}
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--  Custom CSS  -->
+    <link rel="stylesheet" href="/static/base.css">
+
+    <!-- SOCIAL MEDIA ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+
+    <div class="backdrop">
+      <img id="background" src="/static/images/IMG_8898.jpg" >
+      <div class="logo">
+        <h1 id="namelogo">Avran Wong</h1>
+        <p>Portfolio website</p>
+      </div>
+      <div class="background-buttons">
+        <a id="custombuttons" class="btn btn-outline-dark" href="{% url 'gallery:about' %}">about</a>
+        <a id="custombuttons" class="btn btn-outline-dark" href="{% url 'gallery:photography' %}">photography</a>
+        <a id="custombuttons" class="btn btn-outline-dark" href="{% url 'gallery:programming' %}">programming</a>
+      </div>
+
+      <div class="background-buttons-row-2">
+        <!--<a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>-->
+      </div>
+
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% extends "gallery/base.html" %}
+{% block content %}
+{% load static %}
+<script type="text/javascript">
+function popup(){
+  alert('hi');
+}
+</script>
+<div class="container carousel">
+    <div class="row">
+      <div class="column">
+        <button class="btn-img" onclick="popup()"><div class="on-hover"><img src="\static\images\avran_perth_horizontal.jpg"  ></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\milestone_vertical.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\balibromoijen_hhorizontal.jpg" ></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\balibromoijen_vertical.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\avran_jump_horizontal.jpg" alt=""></div></button>
+      </div>
+
+      <div class="column">
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\daocheng_horizontal.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\flags_horizontal.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\daocheng_vertical.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\rawa_horizontal.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\fishing_vertical.jpg" alt=""></div></button>
+      </div>
+
+      <div class="column">
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\Jurong_camp_vertical.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\leaves_horizontal.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\mtfuji_horizontal.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\jon_balibromoijen_vertical.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\krabi_square.jpg" alt=""></div></button>
+
+      </div>
+
+      <div class="column">
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\perth_horizontal.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\perth_sky_horizontal.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\krabi_vertical.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\shibuya_horizontal.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\krabi_fire_vertical.jpg" alt=""></div></button>
+
+      </div>
+
+      <div class="column">
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\the_maine_vertical.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\mtfuji_vertical.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\castle_horizontal.jpg" alt=""></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\waseem_horizontal.jpg\" ></div></button>
+
+        <button class="btn-img"><div class="on-hover"><img src="\static\images\avrans_pic.jpg" alt=""></div></button>
+      </div>
+    </div><!-- row -->
+  </div><!-- /.container -->
+{% endblock %}
